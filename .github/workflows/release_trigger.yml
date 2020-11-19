@@ -119,7 +119,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      NAMESPACE: ${{ secrets.dev_namespace_docker_hub }}
+      NAMESPACE: ${{ DOCKER_FINAL_RELEASE_NAMESPACE }}
       SERVICE_NAME: resident-service
       SERVICE_LOCATION: resident/resident-service
 
